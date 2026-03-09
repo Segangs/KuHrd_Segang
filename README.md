@@ -4,11 +4,8 @@
 
 ## 2026.03.09.
 - 포트폴리오, Github(특히 개인포트폴리오) 준비
-- https://docs.google.com/presentation/d/1igQGshYUiAKx2f91brdvskaBBEhlvog_YM9Dt9nse1I/edit?slide=id.g3ce03867d15_12_0#slide=id.g3ce03867d15_12_0
-- 깃허브 : https://github.com/Segangs/KuHrd_Segang
-- 강사님 : https://github.com/freshmea
-
 - Git 설치
+- WSL2 설치
 - vs code Ctrl+` ->  git clone https://github.com/Segangs/KuHrd_Segang.git
 
 - nano test.c 에디터 / cat test.c 파일내용확인
