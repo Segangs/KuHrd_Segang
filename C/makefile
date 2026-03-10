@@ -1,19 +1,30 @@
 # TARGET = hello limit literal charNumber
 
 # ${TARGET} : ${TARGET}.c
-#	cc -o ${TARGET} ${TARGET}.c
+# 	cc -o ${TARGET} ${TARGET}.c
 
 # clean : 
-#	rm ${TARGET}
+# 	rm ${TARGET}
 
+# -----------------------------------------------------
 
-TARGET = hello charNumber oddEven
+# TARGET = hello charNumber oddEven
 
-all : ${TARGET}
+# all : ${TARGET}
 
-hello : $@
-charNumber : $@ # cc명령은 사실 make에서 생략가능하다.
-oddEven : $@
+# hello : $@
+# charNumber : $@ # cc명령은 사실 make에서 생략가능하다.
+# oddEven : $@
 
-clean : 
+# clean : 
+# 	rm ${TARGET}
+
+# -----------------------------------------------------
+
+SRCS = ${wildcard *.c}
+TARGET = ${SRCS:.c=}
+
+all: ${TARGET}
+
+clean: 
 	rm ${TARGET}

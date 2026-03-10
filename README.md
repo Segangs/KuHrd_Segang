@@ -2,11 +2,11 @@
 
 고려대 개발자 양성과정에서 쓰이는 저장소이다.
 
+
+<details>
+<summary><b>수업내용 보기</b></summary>
+
 ## 2026.03.10.
-[ ] ㅇㅇ
-- [X] ㅇㅇ
-
-
 
 ## 2026.03.09.
 - 포트폴리오, Github(특히 개인포트폴리오) 준비
@@ -22,8 +22,11 @@
 
 - VS CODE >  GitHub 연결
 - WSL 연결 / WSL에 Github  연결 
-- ```text
+```text
     git clone https://github.com/Segangs/KuHrd_Segang.git . 
     git clone https://github.com/Segangs/KuHrd_Segang.git . 
     git clone https://github.com/Segangs/KuHrd_Segang.git . 
 ```
+
+</details>
+
