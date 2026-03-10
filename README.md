@@ -22,4 +22,4 @@
 
 - VS CODE >  GitHub 연결
 - WSL 연결 / WSL에 Github  연결 
-- git clone https://github.com/Segangs/KuHrd_Segang.git . 
+- `git clone https://github.com/Segangs/KuHrd_Segang.git . `
