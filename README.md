@@ -3,9 +3,6 @@
 고려대 개발자 양성과정에서 쓰이는 저장소이다.
 
 
-<details>
-<summary><b>수업내용 보기</b></summary>
-
 ## 2026.03.10.
 1. 리눅스 (Windows + WSL2)
 2. vs code
@@ -58,6 +55,4 @@
 - WSL 연결 / WSL에 Github  연결 
     git clone https://github.com/Segangs/KuHrd_Segang.git . 
 
-
-</details>
 
