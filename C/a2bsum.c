@@ -16,6 +16,6 @@ int main(void)
         sum = sum + i;
     };
     printf("합 : %d\n", sum);
-
+    
     return 0;
 }
