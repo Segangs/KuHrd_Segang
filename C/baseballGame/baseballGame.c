@@ -1,0 +1,1 @@
+extern int seed; // 전역변수가 있다고 명시

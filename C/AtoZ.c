@@ -8,7 +8,6 @@ int main(void)
         printf("%c ", i);
         ++i;
     }
-
     printf("\n");
     return 0;
 }
