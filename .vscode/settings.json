@@ -1,3 +1,8 @@
 {
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "disabled",
+
+    // 빌드 출력 폴더 위치 (기본값: ${workspaceFolder}/build)
+    "cmake.buildDirectory": "${workspaceFolder}/build"
+    // 빌드 시 사용할 Generator 설정 (예: Ninja, Unix Makefiles)
+    //"cmake.generator": "Ninja"
 }
