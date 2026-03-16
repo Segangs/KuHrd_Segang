@@ -34,11 +34,17 @@ typedef struct   // typedef
 
 int main(void) {
     Date d;    // 불러올때 struct를 쓰지 않아도 되어 편리
+    Date *pD; // 포인터도 만들어봄
     d.year = 2026;
     d.month = 7;
     d.day = 19;
 
+    pD = &d;
+    
     printf("%d-%d-%d\n", d.year, d.month, d.day);
+    
+    printf("%d-%d-%d\n", (*pD).year, (*pD).month, (*pD).day);// 역참조 하는 방식
+    printf("%d-%d-%d\n", pD->year, pD->month, pD->day);
 
     return 0;
 }
