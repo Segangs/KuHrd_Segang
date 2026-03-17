@@ -38,15 +38,24 @@ void printResult(FILE *fp, Sdata **table, int n);
 int main(void){
     FILE *fin = fopen("score.dat", "r");
     FILE *fout = fopen("score.out", "w");
-    int n;
-    printf("처리할 학생의 수를 입력하세요: ");
-    if (scanf("%d", &n) != 1)
-        return 1;
+    // int n;
+    // printf("처리할 학생의 수를 입력하세요: ");
+    // if (scanf("%d", &n) != 1)
+    //     return 1;
+    int n = 0;
 
     if (fin == NULL || fout == NULL){
         fprintf(stderr, "파일을 열수 없습니다.\n");
         return 1;
     }
+
+    // 파일에서 데이터 개수 확인
+    char temp_name[20];
+    int temp_kor, temp_eng, temp_mat;
+    while (fscanf(fin, "%s %d %d %d", temp_name, &temp_kor, &temp_eng, &temp_mat) == 4) {
+        n++;
+    }
+    rewind(fin); // 파일 포인터 초기화
 
     Sdata *students = (Sdata *)malloc(sizeof(Sdata) * n);
     Sdata **table = (Sdata **)malloc(sizeof(Sdata) * n);
@@ -67,6 +76,7 @@ int main(void){
 
     fclose(fin);
     fclose(fout);
+    printf("작업을 완료했읍니다!! score.out 파일을 확인해주세요.\n");
     return 0;
 }
 
