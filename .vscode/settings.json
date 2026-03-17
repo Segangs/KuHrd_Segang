@@ -1,5 +1,6 @@
 {
     "C_Cpp.errorSquiggles": "disabled",
+    "locale": "ko",
 
     // 빌드 출력 폴더 위치 (기본값: ${workspaceFolder}/build)
     "cmake.buildDirectory": "${workspaceFolder}/build"
