@@ -25,6 +25,7 @@ int main(void)
     push(&s1, 800);
     push(&s1, 900);
 
+    
     printf("첫번째 pop() 리턴 값: %d \n", pop(&s1)); // 00
     printf("두번째 pop() 리턴 값: %d \n", pop(&s1)); // 00
     printf("세번째 pop() 리턴 값: %d \n", pop(&s1)); // 00

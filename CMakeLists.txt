@@ -1,11 +1,22 @@
 cmake_minimum_required(VERSION 3.10)
-project(segangs)
+project(ATmega128)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_C_STANDARD 17)
+include(ExternalProject)
 
 # add_subdirectory(C/d_compile)
 # add_subdirectory(C/baseballGame)
 # add_subdirectory(HonGong_Practice)
 # add_subdirectory(C/Part_5/twoDouble)
- add_subdirectory(dataStructure/stack/myStack2)
+# add_subdirectory(dataStructure/stack/myStack2)
+
+ ExternalProject_Add(atmega128_project
+	SOURCE_DIR ${CMAKE_SOURCE_DIR}/atmega128
+	BINARY_DIR ${CMAKE_BINARY_DIR}/atmega128-build
+	CMAKE_ARGS
+		-DCMAKE_TOOLCHAIN_FILE=${CMAKE_SOURCE_DIR}/atmega128/avr-toolchain.cmake
+		-DCMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE}
+		-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+	INSTALL_COMMAND ""
+)

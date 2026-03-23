@@ -1,0 +1,38 @@
+{
+    "configurations": [
+        {
+            "name": "avr-atmega128",
+            "includePath": [
+                "${workspaceFolder}/atmega128/**",
+                "/usr/local/include/**",
+                "/usr/include/**",
+            ],
+            "defines": [
+                "F_CPU=16000000UL",
+                "__AVR__",
+                "__AVR_ATmega128__"
+            ],
+            "compilerPath": "/usr/bin/avr-gcc",
+            "compilerArgs": [
+                "-mmcu=atmega128",
+                "-DF_CPU=16000000UL"
+            ],
+            "cStandard": "gnu11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        },
+
+
+        {
+            "includePath": [
+                "/usr/include/**",
+                "/usr/lib/**"
+            ],
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17"
+        }
+    ],
+    "version": 4
+}
