@@ -6,7 +6,7 @@ set(CMAKE_C_STANDARD 17)
 
 # 소스 파일들을 변수에 명시적으로 나열
 set(SOURCES
-    01_070
+    05_180
     )
 
 add_executable(HonGong_test ${SOURCES}.c)
