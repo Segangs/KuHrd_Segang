@@ -17,14 +17,15 @@ set(AVRDUDE_EXTRA_ARGS "" CACHE STRING "additional avrdude arguments")
 
 # --- 실행 파일 및 옵션 ---
 add_executable(${PROJECT_NAME}.elf
-    src/uart3.c
+    src/external_eeprom2.c
     lib/lcd/lcd.c
-    lib/uart0/uart0.c
+    lib/at25/at25160.c
+
 )
 
 target_include_directories(${PROJECT_NAME}.elf PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/lib/lcd
-    ${CMAKE_CURRENT_SOURCE_DIR}/lib/uart0
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/at25
 )
 
 target_compile_options(${PROJECT_NAME}.elf PUBLIC
