@@ -17,9 +17,8 @@ set(AVRDUDE_EXTRA_ARGS "" CACHE STRING "additional avrdude arguments")
 
 # --- 실행 파일 및 옵션 ---
 add_executable(${PROJECT_NAME}.elf
-    src/external_eeprom2.c
-    lib/lcd/lcd.c
-    lib/at25/at25160.c
+    src/pir.c
+    #lib/lcd/lcd.c
 
 )
 
