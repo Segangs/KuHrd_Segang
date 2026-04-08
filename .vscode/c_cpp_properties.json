@@ -1,6 +1,18 @@
 {
     "configurations": [
         {
+            "includePath": [
+                "/usr/include/**",
+                "/usr/lib/**"
+            ],
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17"
+        },
+
+
+        {
             "name": "avr-atmega128",
             "includePath": [
                 "${workspaceFolder}/atmega128/**",
@@ -20,19 +32,8 @@
             "cStandard": "gnu11",
             "cppStandard": "c++17",
             "intelliSenseMode": "linux-gcc-x64"
-        },
-
-
-        {
-            "includePath": [
-                "/usr/include/**",
-                "/usr/lib/**"
-            ],
-            "intelliSenseMode": "linux-gcc-x64",
-            "compilerPath": "/usr/bin/gcc",
-            "cStandard": "c17",
-            "cppStandard": "gnu++17"
         }
+
     ],
     "version": 4
 }
