@@ -19,7 +19,10 @@
         "dataStructure/": true,
         "pico/": true,
    //     ".vscode/": true
-    }
+    },
+
+    "git.autofetch": true,
+
     // 빌드 시 사용할 Generator 설정 (예: Ninja, Unix Makefiles)
     //"cmake.generator": "Ninja"
 }
